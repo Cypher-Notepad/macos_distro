@@ -3,7 +3,7 @@
 ## v3.0
 1. Run the below to create .app with executable JAR
 ```
-javapackager -deploy -native image -srcdir ./ -srcfiles Cypher-Notepad-3.0-release.jar -outdir ./ -outfile cypher-notepad-3.0-macos.app -appclass org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader -description "The Text Editor that provides hybrid encryption" -name "Cypher Notepad" -title "A Java-based, plain-text editor with hybrid encryption." -vendor "Dong-Geon Lee" -BappVersion=3.0 -Bicon="/Users/apple/Desktop/test/CypherNotepad.icns" -Bmac.category=Utilities -BlicenseType="Free"
+javapackager -deploy -native dmg -srcdir ./ -srcfiles Cypher-Notepad-3.0-release.jar -outdir ./ -outfile cypher-notepad-3.0-macos.app -appclass org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader -description "The Text Editor that provides hybrid encryption" -name "Cypher Notepad" -description "A Java-based, plain-text editor with hybrid encryption." -vendor "Dong-Geon Lee" -BappVersion=3.0 -Bicon="CypherNotepad.icns" -Bmac.category=Utilities -BlicenseType="Free"
 ```
 
 2. minimize bundled JRE
