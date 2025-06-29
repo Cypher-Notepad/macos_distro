@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="cypher-notepad-3.0-macos.app.jnlp">
+  <information>
+    <title>Cypher Notepad</title>
+    <vendor>Dong-Geon Lee</vendor>
+    <description>A Java-based, plain-text editor with hybrid encryption.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Cypher-Notepad-3.0-release.jar" size="209550" download="null" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"  name="Cypher Notepad" />
+  <update check="background"/>
+</jnlp>
