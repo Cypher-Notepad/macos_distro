@@ -9,9 +9,21 @@ javapackager -deploy -native image -srcdir ./ -srcfiles Cypher-Notepad-3.0-relea
 2. Minimize bundled JRE. (Use the Python script below.)
    - Java 8 does not support `jlink`.
 
-4. Pack into .pkg with the command below.
+4. Make .dmg file using the command below.
 ```
-sudo pkgbuild --install-location /Applications --component /Applications/Cypher\ Notepad.app /Users/apple/Desktop/test/cypher-notepad-macosx.pkg
+create-dmg \
+  --volname "Application Installer" \
+  --volicon "CypherNotepad.icns" \
+  --background "dmg_backgroud.png" \
+  --window-pos 200 120 \
+  --window-size 570 390 \
+  --icon-size 100 \
+  --icon "Cypher Notepad.app" 145 200 \
+  --hide-extension "Cypher Notepad.app" \
+  --app-drop-link 430 200 \
+  --no-internet-enable \
+  "test_cypher-notepad-3.0-apple-silicon.dmg" \
+  "./intel/Cypher Notepad.app"
 ``` 
 
 ## v2.1
