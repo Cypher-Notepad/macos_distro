@@ -1,7 +1,7 @@
 # macos_distro
 
 ## v3.0
-1. Run the below to create .app with executable JAR (BUILD ON JDK 21)
+1. Run the below to create .dmg with executable JAR (BUILD ON JDK 21)
 ```
 jpackage \
 --type dmg \
