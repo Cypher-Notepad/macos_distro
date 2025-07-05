@@ -18,12 +18,12 @@ create-dmg \
   --window-pos 200 120 \
   --window-size 570 390 \
   --icon-size 100 \
-  --icon "Cypher Notepad.app" 145 200 \
+  --icon "Cypher Notepad.app" 145 195 \
   --hide-extension "Cypher Notepad.app" \
-  --app-drop-link 430 200 \
+  --app-drop-link 430 195 \
   --no-internet-enable \
-  "test_cypher-notepad-3.0-apple-silicon.dmg" \
-  "./intel/Cypher Notepad.app"
+  "test_cypher-notepad-3.0-intel.dmg" \
+  "./bundles/intel/Cypher Notepad.app"
 ``` 
 
 ## v2.1
