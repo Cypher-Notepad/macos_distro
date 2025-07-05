@@ -22,7 +22,7 @@ jpackage \
 2. Make .dmg file using the command below.
 ```
 create-dmg \
-  --volname "Application Installer" \
+  --volname "Cypher Notepad" \
   --volicon "CypherNotepad.icns" \
   --background "dmg_backgroud.png" \
   --window-pos 200 120 \
@@ -32,8 +32,8 @@ create-dmg \
   --hide-extension "Cypher Notepad.app" \
   --app-drop-link 430 195 \
   --no-internet-enable \
-  "test_cypher-notepad-3.0-intel.dmg" \
-  "./bundles/intel/Cypher Notepad.app"
+  "cypher-notepad-3.0-apple-silicon.dmg" \
+  "./bundles/silicon/Cypher Notepad.app"
 ``` 
 
 ## v2.1
