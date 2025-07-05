@@ -1,15 +1,25 @@
 # macos_distro
 
 ## v3.0
-1. Run the below to create .app with executable JAR
+1. Run the below to create .app with executable JAR (BUILD ON JDK 21)
 ```
-javapackager -deploy -native image -srcdir ./ -srcfiles Cypher-Notepad-3.0-release.jar -outdir ./ -outfile cypher-notepad-3.0-macos.app -appclass org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader -description "The Text Editor that provides hybrid encryption" -name "Cypher Notepad" -description "A Java-based, plain-text editor with hybrid encryption." -vendor "Dong-Geon Lee" -BappVersion=3.0 -Bicon="CypherNotepad.icns" -Bmac.category=Utilities -BlicenseType="Free"
+jpackage \
+--type app-image \
+--input ./build \
+--main-jar Cypher-Notepad-3.0-release.jar \
+--dest ~/testspace/test \
+--name "Cypher Notepad" \
+--main-class org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader \
+--description "A Java-based, plain-text editor with hybrid encryption." \
+--vendor "Dong-Geon Lee" \
+--app-version 3.0 \
+--icon CypherNotepad.icns \
+--mac-package-name "Cypher Notepad" \
+--mac-app-category Utilities \
+--add-modules java.base,java.desktop,java.management,jdk.crypto.ec
 ```
 
-2. Minimize bundled JRE. (Use the Python script below.)
-   - Java 8 does not support `jlink`.
-
-4. Make .dmg file using the command below.
+2. Make .dmg file using the command below.
 ```
 create-dmg \
   --volname "Application Installer" \
