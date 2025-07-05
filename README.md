@@ -4,7 +4,7 @@
 1. Run the below to create .app with executable JAR (BUILD ON JDK 21)
 ```
 jpackage \
---type app-image \
+--type dmg \
 --input ./build \
 --main-jar Cypher-Notepad-3.0-release.jar \
 --dest ~/testspace/test \
@@ -18,23 +18,6 @@ jpackage \
 --mac-app-category Utilities \
 --add-modules java.base,java.desktop,java.management,jdk.crypto.ec
 ```
-
-2. Make .dmg file using the command below.
-```
-create-dmg \
-  --volname "Cypher Notepad" \
-  --volicon "CypherNotepad.icns" \
-  --background "dmg_backgroud.png" \
-  --window-pos 200 120 \
-  --window-size 570 390 \
-  --icon-size 100 \
-  --icon "Cypher Notepad.app" 145 195 \
-  --hide-extension "Cypher Notepad.app" \
-  --app-drop-link 430 195 \
-  --no-internet-enable \
-  "cypher-notepad-3.0-apple-silicon.dmg" \
-  "./bundles/silicon/Cypher Notepad.app"
-``` 
 
 ## v2.1
 

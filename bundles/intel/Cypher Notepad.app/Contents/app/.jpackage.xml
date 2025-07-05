@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<jpackage-state version="21.0.7" platform="macOS">
-  <app-version>3.0</app-version>
-  <main-launcher>Cypher Notepad</main-launcher>
-  <main-class>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</main-class>
-  <signed>false</signed>
-  <app-store>false</app-store></jpackage-state>
